@@ -50,7 +50,7 @@ const AddUsers = props => {
 
 
     return (
-        <Wrapper>
+        <React.Fragment>
         {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler}></ErrorModal>}
         <Card className={classes.input}>
          <form onSubmit={addUsersHandler}>
@@ -61,7 +61,7 @@ const AddUsers = props => {
             <Button type="submit">Add User</Button>
          </form>
         </Card>
-        </Wrapper>
+        </React.Fragment>
     )
 
 }
