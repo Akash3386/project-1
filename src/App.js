@@ -7,9 +7,9 @@ import Wrapper from './components/Helper/Wrapper';
 function App() {
   const [enteredValue,setenteredvalue] = useState([])
 
-  const OnaddUserHandler = (uName,uAge) => {
+  const OnaddUserHandler = (uName,uAge,uCollege) => {
      setenteredvalue((prevEnteredValue)=>{
-      return [...prevEnteredValue, {name:uName,age:uAge, id: Math.random().toString()}]
+      return [...prevEnteredValue, {name:uName,age:uAge,college:uCollege, id: Math.random().toString()}]
      })
   }
 
